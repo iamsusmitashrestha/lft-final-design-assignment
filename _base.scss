@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/sf-pro-display-font/SF-Pro-Display-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/sf-pro-display-font/SF-Pro-Display-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/sf-pro-display-font/SF-Pro-Display-Semibold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/sf-pro-display-font/SF-Pro-Display-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gillroy";
+  src: url(fonts/Gillroy/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gillroy";
+  src: url(fonts/Gillroy/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gillroy";
+  src: url(fonts/Gillroy/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gillroy";
+  src: url(fonts/Gillroy/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+
+:root {
+  --primary-color: #1443bd;
+  --primary-dark: #0a215f;
+  --secondary-color: #2a84c6;
+  --secondary-dark: #0661a1;
+  --secondary-light: #94c2e3;
+  --light-grey: #e5e5e5;
+  --primary-font-family: "Gillroy", sans-serif;
+  --secondary-font-family: "SF Pro Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  line-height: var(--primary-line-height);
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
