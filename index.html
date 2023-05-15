@@ -18,12 +18,14 @@
     <div class="header-wrapper">
       <header class="container">
         <div class="header-left">
-          <i class="fa-solid fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-lg"></i>
+          </a>
           <a href="">
             <img src="./images/Logo.svg" alt="Logo" />
           </a>
         </div>
-        <nav>
+        <nav class="top-nav" id="myTopnav">
           <ul>
             <li><a href=""> About</a></li>
             <li><a href=""> Features</a></li>
@@ -60,9 +62,6 @@
         </div>
       </section>
       <div class="pattern"><img src="./images/Pattern.svg" alt="" /></div>
-      <div class="middle-pyramid">
-        <img src="./images/Point-line triangle cube (Middle).svg" alt="" />
-      </div>
     </div>
     <section class="container reason-section">
       <div class="first hr-center">
@@ -268,8 +267,8 @@
       </div>
       <div class="logo-wrapper">
         <div class="logos">
-          <img src="./images/first.png" alt="" />
           <img src="./images/1.png" alt="" />
+          <img src="./images/first.png" alt="" />
           <img src="./images/2.png" alt="" />
           <img src="./images/3.png" alt="" />
           <img src="./images/4.png" alt="" />
@@ -313,7 +312,9 @@
       </div>
       <div class="container footer-last">
         <div class="left">
-          <img src="./images/Logo-white.svg" alt="" />
+          <a href="">
+            <img src="./images/Logo-white.svg" alt="" />
+          </a>
           <div>
             Copyright &copy; 2021 Peyme Movement, Inc. Peyme was co-founded by
             Thanh Thien and Thanh Long.
@@ -329,5 +330,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "top-nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "top-nav";
+        }
+      }
+    </script>
   </body>
 </html>
